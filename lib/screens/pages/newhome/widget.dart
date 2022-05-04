@@ -40,7 +40,7 @@ total() async {
   }
 
 expenseNotifier.value = 0;
-expenseNotifier.value = totalIncomeAmount;
+expenseNotifier.value = totalExpenseAmount;
 expenseNotifier.notifyListeners();
 
 totalAmountNotifier.value=0;

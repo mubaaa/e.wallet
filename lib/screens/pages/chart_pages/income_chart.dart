@@ -19,18 +19,18 @@ class _IncomeShowChartState extends State<IncomeShowChart> {
    
     return Column(
       children: [
-        PieChart(
-          dataMap: ,
-          chartRadius: MediaQuery.of(context).size.width / 1.4,
-          legendOptions: const LegendOptions(
-            legendPosition: LegendPosition.bottom,
-            showLegendsInRow: true,
-            legendTextStyle:
-                TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-          ),
-          chartValuesOptions:
-              const ChartValuesOptions(showChartValuesInPercentage: false),
-        ),
+        // PieChart(
+        //   dataMap: ,
+        //   chartRadius: MediaQuery.of(context).size.width / 1.4,
+        //   legendOptions: const LegendOptions(
+        //     legendPosition: LegendPosition.bottom,
+        //     showLegendsInRow: true,
+        //     legendTextStyle:
+        //         TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        //   ),
+        //   chartValuesOptions:
+        //       const ChartValuesOptions(showChartValuesInPercentage: false),
+        // ),
         ValueListenableBuilder(
           valueListenable: TransactionDB.instance.incomeTransactionNotifier,
           builder: (ctx, List<TransactionModel> lists, _) {
